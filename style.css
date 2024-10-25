@@ -1,0 +1,759 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    min-height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 8vh 65vh 10vh 23vh 102vh 84vh 4.7vw 85vh 4.7vw 72vh 75vh 14vh 10vh 54vh;
+}
+
+#top {
+    /* background-color: blue; */
+    /* height: 30vh;
+    width: 30vh; */
+    display: grid;
+    grid-template-columns: 70% 30%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#top-left {
+    display: grid;
+    grid-template-columns: 6% 3% 10% 10% 6% 6% 7% 6% 5% 5% 10% 10%;
+
+    >img,
+    h3 {
+        padding: 9px;
+        font-size: 18px;
+    }
+
+    >h4 {
+        margin-top: 20px;
+        opacity: 0.6;
+        font-size: 13px;
+    }
+}
+
+#top-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 13px;
+    opacity: 0.7;
+    margin-bottom: 2px;
+
+}
+
+
+
+
+
+
+#top-bottom {
+    background-color: rgb(218, 119, 49);
+
+    background-image: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Pro-11-Keyboard-Bundle-FY25HOL:VP5-1920x600");
+    background-size: cover;
+    padding: 6vw;
+
+    #op {
+        height: 40vh;
+        width: 35vw;
+
+        /* background-color: rgb(82, 49, 49); */
+        #bt1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            background-color: #C03BC4;
+            border-color: white;
+            height: 3.7vh;
+            width: 3.6vw;
+        }
+
+        >h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 10px;
+            line-height: 1.2;
+        }
+
+        >p {
+            margin-top: 25px;
+            line-height: 1.6;
+
+            font-family: Arial, Helvetica, sans-serif;
+            opacity: 0.8;
+            font-size: 13.5px;
+        }
+
+        #bt2 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            background-color: #0067b8;
+            border-color: white;
+            height: 4.5vh;
+            width: 6.5vw;
+            margin-top: 8.5vh;
+        }
+
+    }
+
+}
+
+#icons {
+    /* background-color: rgb(151, 188, 18); */
+    padding-left: 41%;
+    padding-top: 20px;
+
+    >i {
+        margin-right: 30px;
+    }
+}
+
+#icons-bottom {
+    /* background-color: rgb(81, 81, 144); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+
+    .icon-op {
+        height: 45px;
+        width: 45px;
+        display: block;
+    }
+}
+
+#om-1,
+#om-2,
+#om-3,
+#om-4,
+#om-5 {
+    /* background-color: black; */
+    height: 150px;
+    width: 200px;
+    padding-top: 13.5vh;
+    /* padding-left: 70px; */
+    position: relative;
+
+    >img {
+        display: block;
+        position: absolute;
+        top: 34%;
+        left: 38%;
+    }
+
+    >a {
+        color: blue;
+
+        margin-left: 30px;
+    }
+
+
+}
+
+#om-3>a {
+    margin-left: 35px;
+}
+
+#om-5>a {
+    margin-left: 52px;
+}
+
+
+
+
+#products {
+    /* background-color: rgb(116, 20, 120); */
+    display: flex;
+    align-items: center;
+    padding: 23px;
+    /* justify-content: space-evenly; */
+    gap: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+
+    >.pro {
+        height: 87vh;
+        width: 23vw;
+        /* background-color: orange; */
+        border: 1px solid gray;
+
+        >img {
+            width: 100%;
+        }
+    }
+}
+
+#pro1 {
+    >h1 {
+        padding: 30px;
+        line-height: 1.2;
+
+    }
+
+    >p {
+        padding: 30px;
+        line-height: 1.4;
+
+    }
+
+    >.bt1 {
+
+        margin-left: 30px;
+        background-color: #0067b8;
+        color: white;
+
+    }
+}
+
+#pro2 {
+    >.new {
+
+
+        height: 27px;
+        width: 50px;
+        background-color: #C03BC4;
+        border: 1px solid white;
+        color: white;
+        margin-top: 11px;
+        margin-left: 20px;
+
+    }
+
+
+    >h1 {
+        padding: 10px;
+        line-height: 1.2;
+
+    }
+
+    >p {
+        margin-top: 39px;
+        padding: 30px;
+        line-height: 1.4;
+
+
+    }
+
+    >.bt2 {
+        margin-top: 42px;
+        margin-left: 30px;
+        background-color: #0067b8;
+        color: white;
+
+    }
+
+}
+
+#pro3 {
+    >h1 {
+        padding: 32px;
+        line-height: 1.2;
+
+    }
+
+    >p {
+        padding: 15px;
+        line-height: 1.4;
+        margin-top: 90px;
+
+    }
+
+    >.bt3 {
+        margin-top: 75px;
+        margin-left: 30px;
+        background-color: #0067b8;
+        color: white;
+
+    }
+}
+
+#pro4 {
+
+    >.new {
+
+
+        height: 27px;
+        width: 50px;
+        background-color: #C03BC4;
+        border: 1px solid white;
+        color: white;
+        margin-top: 11px;
+        margin-left: 20px;
+
+    }
+
+
+    >h1 {
+        padding: 15px;
+        line-height: 1.2;
+
+    }
+
+    >p {
+        padding: 36px;
+        line-height: 1.4;
+
+    }
+
+    >.bt4 {
+        margin-top: 32px;
+        margin-left: 30px;
+        background-color: #0067b8;
+        color: white;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#laptop {
+    padding: 20px;
+    /* background-color: rgb(75, 4, 13); */
+
+}
+
+#laptop-div {
+    background-color: rgb(75, 4, 13);
+    height: 90%;
+    width: 100%;
+
+    background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Laptop-Copilot-Plus-PC-Platinum-FY25HOL:VP5-1596x600);
+    background-size: cover;
+    padding-top: 20vh;
+    padding-left: 55vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+    >.container {
+        >h1 {
+            margin-top: 15px;
+            line-height: 1.2;
+
+        }
+
+        >p {
+            margin-top: 20px;
+            line-height: 1.5;
+
+        }
+
+        .new {
+
+            height: 27px;
+            width: 50px;
+            background-color: #C03BC4;
+            border: 1px solid white;
+            color: white;
+
+        }
+
+        >.bt {
+            margin-top: 42px;
+            /* margin-left: 30px; */
+            background-color: #0067b8;
+            color: white;
+
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+#for-business {
+    height: 10vh;
+    width: 98.9vw;
+    /* background-color: #C03BC4; */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 23px;
+    padding-left: 20px;
+}
+
+
+
+
+
+
+#business {
+    /* background-color: rgb(238, 75, 75); */
+    display: flex;
+    align-items: center;
+    padding: 23px;
+    /* justify-content: space-evenly; */
+    gap: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px; 
+
+    >.bus{
+        height: 79vh;
+        width: 23vw;
+        /* background-color: orange; */
+        border: 1px solid gray;
+
+        >img {
+            width: 100%;
+        }
+    }
+}
+
+#bus1 {
+    >.new {
+
+
+        height: 27px;
+        width: 50px;
+        background-color: #C03BC4;
+        border: 1px solid white;
+        color: white;
+        margin-top: 11px;
+        margin-left: 32px;
+
+    }
+
+    >h1 {
+        padding: 30px;
+        line-height: 1.2;
+
+    }
+
+    >p {
+        padding: 22px;
+        line-height: 1.4;
+        margin-left: 10px;
+
+    }
+
+    >.bsbt1 {
+
+        margin-left: 30px;
+        background-color: #0067b8;
+        color: white;
+        margin-bottom: 9px;
+
+    }
+    >h4{
+        font-size: 14px;
+        margin-left: 28px;
+    }
+}
+
+#bus2 {
+    
+
+    >h1 {
+        padding: 40px;
+        line-height: 1.2;
+
+    }
+
+    >p {
+        margin-top: 12px;
+        padding: 30px;
+        line-height: 1.7;
+        margin-left: 10px;
+
+
+    }
+
+    >.bsbt2 {
+        margin-top: 10px;
+        margin-left: 40px;
+        background-color: #0067b8;
+        color: white;
+
+    }
+
+}
+
+#bus3 {
+    >h1 {
+        padding: 32px;
+        line-height: 1.2;
+
+
+    }
+
+    >p {
+        padding: 7px;
+        line-height: 1.7;
+        margin-top: 90px;
+        margin-left: 18px;
+
+
+    }
+
+    >.bsbt3 {
+        margin-top: 55px;
+        margin-left: 30px;
+        background-color: #0067b8;
+        color: white;
+
+    }
+}
+
+#bus4 {
+
+    
+
+    >h1 {
+        padding: 27px;
+        line-height: 1.2;
+
+    }
+
+    >p {
+        padding: 30px;
+        line-height: 1.7;
+
+    }
+
+    >.bsbt4 {
+        margin-top: 51px;
+        margin-left: 30px;
+        background-color: #0067b8;
+        color: white;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+#copilot{
+    height: 10vh;
+    width: 98.9vw;
+    /* background-color: #C03BC4; */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 44px;
+    padding-left: 20px;
+
+}
+
+
+#ai {
+    /* background-color: rgb(43, 140, 192); */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px; 
+
+}
+.ai{
+    height: 70vh;
+    width: 31vw;
+    /* background-color: #4d2626; */
+    border: 1px solid gray;
+    >img{
+        width: 100%;
+    }
+
+
+}
+#ai1 {
+
+    
+
+    >h1 {
+        padding: 22px;
+        line-height: 1.2;
+
+    }
+
+    >p {
+        margin-left: 24px;
+        line-height: 1.7;
+
+    }
+
+    >.aibt1 {
+        margin-top: 30px;
+        margin-left: 24px;
+        background-color: #0067b8;
+        color: white;
+
+    }
+}
+
+#ai2 {
+
+    
+
+    >h1 {
+        padding: 22px;
+        line-height: 1.2;
+
+    }
+
+    >p {
+        margin-left: 24px;
+        line-height: 1.7;
+
+    }
+
+    >.aibt2 {
+        margin-top: 51px;
+        margin-left: 24px;
+        background-color: #0067b8;
+        color: white;
+
+    }
+}
+
+#ai3 {
+
+    
+
+    >h1 {
+        padding: 15px;
+        line-height: 1.2;
+
+    }
+
+    >p {
+        margin-left: 24px;
+        line-height: 1.5;
+        margin-bottom: -3pxpx;
+
+    }
+
+    >.aibt3 {
+        margin-top: 10px;
+        margin-left: 24px;
+        background-color: #0067b8;
+        color: white;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ #voter {
+     /* background-color: rgb(169, 173, 133); */
+     
+     padding: 20px; 
+
+   
+ }
+#voter-div {
+    /* background-color: rgb(75, 4, 13); */
+    height: 100%;
+    width: 100%;
+
+    background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-NDEAM-Accessibility-Flowers-Dk-Green:VP5-1596x600);
+    background-size: cover;
+    background-position: center;
+    padding-top: 20vh;
+    padding-left: 55vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+
+
+    >.voter-container {
+        >h1 {
+            margin-top: 15px;
+            line-height: 1.2;
+
+        }
+
+        >p {
+            margin-top: 20px;
+            line-height: 1.5;
+
+        }
+
+        
+
+        >.bt {
+            margin-top: 42px;
+            /* margin-left: 30px; */
+            background-color: #0067b8;
+            color: white;
+            border: 1px solid white;
+
+        }
+
+    }
+
+} 
+
+
+#again-icons {
+    /* background-color: rgba(214, 46, 181, 0.447); */
+    padding-left: 41%;
+    padding-top: 20px;
+
+    >i {
+        margin-right: 30px;
+    }
+}
+
+
+#follow {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: rgb(34, 137, 108); */
+    display:flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    >h3{
+margin-left: 80px;
+    }
+    >i{
+        margin-left: 50px;
+    }
+    >button{
+        margin-left: 69.9vw;
+        position: sticky;
+    }
+
+}
+
+#footer {
+    background-color: rgb(212, 249, 2);
+    background-image: url(footer.png);
+}
